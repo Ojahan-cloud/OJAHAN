@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Pribadi | Ojahan Siagian</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <div class="nav-logo">
+      <img src="hans_group-removebg-preview.png" alt="HANS GROUP">
+    </div>
+    <span class="brand-name">HANS GROUP</span>
+  </div>
+
+  <!-- HAMBURGER -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <!-- MENU -->
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#experience">Pengalaman</a></li>
+    <li><a href="#education">Pendidikan</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li class="nav-actions">
+      <button onclick="toggleLang()" class="btn-icon">ID / EN</button>
+      <button onclick="toggleDark()" class="btn-icon" id="darkBtn">🌙</button>
+    </li>
+  </ul>
+</nav>
+
+
+<!-- HEADER -->
+<header>
+  <div class="profile-container">
+    <img src="ojahan.png" alt="Foto Profil" class="profile-img">
+    <h1>Ojahan Siagian</h1>
+    <p id="subtitle">Web Developer | Designer | Tech Enthusiast</p>
+    <li></li>
+    <p class="brand"><strong>HANS GROUP</strong></p>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="container">
+
+  <section class="card" id="about">
+    <h2 id="aboutTitle">👤 Tentang Saya</h2>
+    <p id="aboutText">
+      Saya adalah developer di bawah naungan <strong>HANS GROUP</strong> yang fokus pada pengembangan web dan solusi digital inovatif, dan saya adalah mahasiswa aktif Teknik Perkeretaapian ITERA.
+    </p>
+  </section>
+
+  <section class="card" id="experience">
+    <h2 id="expTitle">📸 Pengalaman</h2>
+    <div class="slider">
+      <div class="slides">
+
+        <div class="slide active">
+          <img src="TPB-1.jpeg" alt="Project 1">
+          <div class="caption">
+            <h3>Asisten Praktikum Komputer</h3>
+            <p>Membantu mahasiswa memahami komputer dan software.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="exp2.jpg" alt="Project 2">
+          <div class="caption">
+            <h3>Design & Branding</h3>
+            <p>Mendesain UI/UX dan identitas visual.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="exp3.jpg" alt="Project 3">
+          <div class="caption">
+            <h3>Team Collaboration</h3>
+            <p>Bekerja sama dalam tim teknologi.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="nav prev" onclick="prevSlide()">❮</button>
+      <button class="nav next" onclick="nextSlide()">❯</button>
+    </div>
+  </section>
+
+  <section class="card" id="education">
+    <h2 id="eduTitle">🎓 Pendidikan</h2>
+    <ul class="edu-list">
+      <li id="edul">S1 Teknik Perkeretaapian, Institut Teknologi Sumatera</li>
+      <li>SMAN 02 Jonggol</li>
+      <li>SMPN 02 Jonggol</li>
+      <li>SD Saint Enoch Citra Indah</li>
+    </ul>
+  </section>
+
+  <section class="card" id="skills">
+    <h2>🚀 Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+        <span>HTML</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+        <span>CSS</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+        <span>GitHub</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 HANS GROUP | Ojahan Siagian</p>
+</footer>
+
+<a href="https://wa.me/628888676104" class="wa-float" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="30">
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
